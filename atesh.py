@@ -401,20 +401,19 @@ def follow(ses,coki):
 	get = r.find('a', string='Follow').get('href')
 	ses.get(('https://mbasic.facebook.com' + str(get)), cookies={'cookie': coki}).text
 
-logo = ("""\033[92m
- __    __  .______        ___       __   _______   ______   
-|  |  |  | |   _  \      /   \     |  | |       \ /  __  \  
-|  |  |  | |  |_)  |    /  ^  \    |  | |  .--.  |  |  |  | 
-|  |  |  | |   _  <    /  /_\  \   |  | |  |  |  |  |  |  | 
-|  `--'  | |  |_)  |  /  _____  \  |  | |  '--'  |  `--'  | 
- \______/  |______/  /__/     \__\ |__| |_______/ \______/
-\033________________________________
+logo = ("""
 
-  Owner  :   TOR-UBAID
-  Github   : Ubaid07
-  Facebook : Tor Ubaid 
+   _____   __                .__     
+  /  _  \_/  |_  ____   _____|  |__  
+ /  /_\  \   __\/ __ \ /  ___/  |  \ 
+/    |    \  | \  ___/ \___ \|   Y  \\
+\____|__  /__|  \___  >____  >___|  /
+        \/          \/     \/     \/ 
+
+  Owner  :   Atesh Khan
+  Facebook : Atesh Khan
   
-______________________________\033[1;37m""")
+  """)
 
 class Main:
 	def __init__(self):
